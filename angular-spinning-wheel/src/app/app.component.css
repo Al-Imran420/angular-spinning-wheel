@@ -1,0 +1,126 @@
+.mainbox {
+  position: relative;
+  width: 500px;
+  height: 500px;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border-radius: 50%;
+  border: 10px solid #ffffff;
+  overflow: hidden;
+  transition: 5s ease-in-out;
+}
+span {
+  width: 50%;
+  height: 50%;
+  display: inline-block;
+  position: absolute;
+}
+.span1 {
+  clip-path: polygon(0 92%, 100% 50%, 0 8%);
+  background-color: #ce4b4b;
+  top: 120px;
+  left: 0;
+}
+.span2 {
+  clip-path: polygon(100% 92%, 0 50%, 100% 8%);
+  background-color: #cec54b;
+  top: 120px;
+  right: 0;
+}
+.span3 {
+  clip-path: polygon(50% 0%, 8% 100%, 92% 100%);
+  background-color: #ce4bb8;
+  bottom: 0px;
+  left: 120px;
+}
+.span4 {
+  clip-path: polygon(50% 100%, 92% 0, 8% 0);
+  background-color: #4bce9c;
+  top: 0;
+  left: 120px;
+}
+.box2 {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-135deg);
+}
+span b {
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  border-radius: 50%;
+  font-size: 26px;
+  text-align: center;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  background-color: #ff5722;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 20px #eeff00;
+}
+.spin:active {
+  box-shadow: 0 0 0px #000000;
+}
+
+/* Alert Pop Up */
+.alert_popup {
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background-color: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+.alert_popup p{
+  font-size: 18px;
+  color: #333333;
+}
+.alert_popup h1{
+  font-size: 48px;
+  color: #506be2;
+}
+.alert_popup button{
+  padding: 10px;
+  border:0;
+  color: #ffffff;
+  background-color: #506be2;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.show_alert {
+  opacity: 1;
+  visibility: visible;
+  margin-top: 0px;
+}
+.hide_alert {
+  opacity: 0;
+  visibility: hidden;
+  margin-top: -50px;
+}
